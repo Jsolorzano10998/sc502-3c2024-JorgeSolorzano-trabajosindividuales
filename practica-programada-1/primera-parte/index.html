@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Primera Parte</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Formulario de Registro</h1>
+
+    <p>Por favor complete la siguiente información</p>
+
+    <form>
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <label>
+          Nombre:
+          <input id="nombre" name="nombre" type="text" required />
+        </label>
+
+        <label>
+          Apellido:
+          <input id="apellido" name="apellido" type="text" required />
+        </label>
+
+        <label>
+          Email:
+          <input id="email" name="email" type="email" required />
+        </label>
+
+        <label>
+          Contraseña:
+          <input id="password" name="password" type="password" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tipo de cuenta</legend>
+
+        <label>
+          <input
+            type="radio"
+            name="tipo-cuenta"
+            value="personal"
+            class="inline"
+            checked
+          />
+          Personal
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="tipo-cuenta"
+            value="empresa"
+            class="inline"
+          />
+          Empresa
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos Adicionales</legend>
+        <label>
+          Foto de perfil:
+          <input id="foto" type="file" name="foto" />
+        </label>
+
+        <label>
+          Edad:
+          <input id="edad" type="number" name="edad" />
+        </label>
+
+        <label>
+          ¿Cómo nos conoció?
+
+          <select id="referencia" name="referencia">
+            <option value="">Seleccione una opción</option>
+
+            <option value="1">Redes sociales</option>
+
+            <option value="2">Amigos</option>
+
+            <option value="3">Internet</option>
+
+            <option value="4">Algun Otro</option>
+          </select>
+        </label>
+
+        <label>
+          Información adicional:
+
+          <textarea
+            id="biografia"
+            name="biografia"
+            rows="4"
+            placeholder="Cuéntanos algo sobre ti..."
+          ></textarea>
+        </label>
+      </fieldset>
+
+      <label>
+        <input type="checkbox" class="inline" required />
+
+        Acepto los términos y condiciones
+      </label>
+
+      <input type="submit" value="Registrarse" />
+    </form>
+  </body>
+</html>
